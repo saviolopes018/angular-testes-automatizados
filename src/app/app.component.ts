@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular testing';
+  public likes = 0;
+
+  public like(): void {
+    this.likes++;
+  }
 }
